@@ -1,0 +1,116 @@
+body {
+    background-image: url(./IMG/download.jpg);
+    padding-top: 80px;
+    background-repeat: repeat;
+}
+
+#abc {
+    height: 60px;
+    position: relative;
+    top: 10px;
+    width: 25%;
+}
+
+.section {
+    padding-top: 100px;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    font-size: 3vw;
+}
+
+#top {
+    width: 10vw;
+    height: 10vh;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 1000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#maindiv {
+    gap: 20px;
+    position: relative;
+    top: 50px;
+}
+
+#A, #B, #C, #D, #E, #F, #G, #H, #I, #J, #K, #L, #M, #N, #O, #P, #Q, #R, #S, #T, #U, #V, #W, #X, #Y, #Z {
+    background-color: rgb(186, 204, 121);
+    position: relative;
+    top: 70px;
+    width: 450px;
+    height: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(3, 2, 2);
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+#apple, #ball, #cat, #dog, #elephant, #frog, #giraffe, #hen, #icecream, #jug, #kettle, #lion, #monkey, #necklace, #octopus, #penguin, #quail, #rabbit, #snake, #tiger, #umbrella, #venus, #wood, #xylophone, #yak, #zebra {
+    height: 50%;
+    position: relative;
+    top: 20px;
+    width: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .letters {
+        font-size: 1.5vw;
+    }
+
+    #abc1 {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #ebff32;
+        z-index: 1000;
+        padding: 20px; /* Fixed padding */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+        padding-top: 100px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+    }
+
+    .letters a:hover {
+        color: #007BFF;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f1f1f1;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
