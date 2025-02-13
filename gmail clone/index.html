@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="left">
+            <i class="fas fa-bars menu-toggle"></i>
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Gmail Logo" class="gmail-logo">
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search mail">
+            <i class="fas fa-sliders-h"></i>
+        </div>
+        <div class="right">
+            <i class="fas fa-th"></i>
+            <i class="fas fa-gem"></i>
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-question-circle"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <button class="compose-btn"><i class="fas fa-pencil-alt"></i> <span>Compose</span></button>
+            <ul>
+                <li class="active"><i class="fas fa-inbox"></i> <span>Inbox</span> <span class="count">1,959</span></li>
+                <li><i class="far fa-star"></i> <span>Starred</span></li>
+                <li><i class="far fa-clock"></i> <span>Snoozed</span></li>
+                <li><i class="far fa-paper-plane"></i> <span>Sent</span></li>
+                <li><i class="far fa-file"></i> <span>Drafts</span> <span class="count">6</span></li>
+                <li><i class="fas fa-chevron-down"></i> <span>More</span></li>
+            </ul>
+        </aside>
+
+
+        <section class="email-container">
+            <div class="email-header">
+                <div class="tabs">
+                    <span class="active">Primary</span>
+                    <span>Promotions <span class="badge">8 new</span></span>
+                    <span>Social <span class="badge">14 new</span></span>
+                    <span>Updates <span class="badge">15 new</span></span>
+                </div>
+            </div>
+
+            <div class="email-list">
+                <div class="email-item">
+                    <input type="checkbox">
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="sender">Asharib Ali (Classr.)</span>
+                    <span class="subject">New Assignment: "Gmail Clone"</span>
+                    <span class="date">Feb 10</span>
+                </div>
+                <div class="email-item">
+                    <input type="checkbox">
+                    <span class="star"><i class="far fa-star"></i></span>
+                    <span class="sender">LinkedIn</span>
+                    <span class="subject">AHMED just interacted with a post</span>
+                    <span class="date">Feb 10</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<script>
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector(".sidebar").classList.toggle("collapsed");
+    });
+</script>
+
+</body>
+</html>
