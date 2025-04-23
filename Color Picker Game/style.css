@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    color: #00796b;
+  }
+  
+  #targetColor {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .controls {
+    margin: 15px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004d40;
+  }
+  
+  button.active {
+    background-color: #004d40;
+  }
+  
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .color-box {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.1);
+  }
+  
+  #message {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  

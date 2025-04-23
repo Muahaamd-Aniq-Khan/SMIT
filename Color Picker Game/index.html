@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Color Picker Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Guess The Color</h1>
+    <h2 id="targetColor">RGB(?, ?, ?)</h2>
+
+    <div class="controls">
+      <button onclick="setDifficulty('easy')">Easy</button>
+      <button onclick="setDifficulty('hard')" class="active">Hard</button>
+      <button onclick="resetGame()">New Colors</button>
+    </div>
+
+    <div id="message"></div>
+    <div class="color-grid" id="colorGrid"></div>
+
+    <p>Score: <span id="score">0</span></p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
